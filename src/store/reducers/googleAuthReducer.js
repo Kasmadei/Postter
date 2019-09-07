@@ -5,7 +5,6 @@ const initState = {
 };
 
 export const googleAuthReducer = (state = initState, action) => {
-  console.log(action.type);
   switch (action.type) {
     case 'GOOGLE_SIGNIN_SUCCESS':
       return {

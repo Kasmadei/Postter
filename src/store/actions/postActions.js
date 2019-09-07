@@ -138,7 +138,7 @@ export const getPostById = (id) => {
       dispatch(getPostByIdSuccess(post));
     }
     const isErr = (res) => {
-      console.log(res);
+      dispatch(throwErrMsg(res));
     }
     dispatch(getPostByIdStart());
     const token = localStorage.getItem('x-access-token');
@@ -190,7 +190,7 @@ export const editPost = (post) => {
         }
       })
       .then(isOk, isErr)
-      .catch(errMessage => console.log(errMessage));
+      .catch(errMessage => throwErrMsg(errMessage));
   }
 }
 
