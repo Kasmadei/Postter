@@ -14,6 +14,8 @@ Tech Stack:
 - HTML
 - CSS (Bootstrap)
 - JavaScript (React, Redux)
+- Docker
+- Git
 
 
 ![alt text](https://i.ibb.co/dbzLnnJ/Postter1.jpg)
